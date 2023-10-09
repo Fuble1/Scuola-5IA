@@ -31,26 +31,20 @@ require("head.php");
 
     if($n1 && $n2 && $n3){      // verifico che esistano tutti e tre i numeri necessari
         if($n1<=$n2 && $n2<=$n3){
-            echo("
-                <div class=\"alert alert-success\" role=\"alert\">
+            echo("<div class=\"alert alert-success\" role=\"alert\">
                     I tre valori sono in ordine crescente.
-                </div>
-            ");
+                </div>");
         }
         else{
-            echo("
-                <div class=\"alert alert-danger\" role=\"alert\">
+            echo("<div class=\"alert alert-danger\" role=\"alert\">
                     I tre valori NON SONO in ordine crescente.
-                </div>
-            ");
+                </div>");
         }
     }
     else{
-        echo("
-            <div class=\"alert alert-warning\" role=\"alert\">
+        echo("<div class=\"alert alert-warning\" role=\"alert\">
                 Attension plis: UNO O PIU' VALORI NON PRESENTI!
-            </div>
-        ");
+            </div>");
     }
 
 require("foot.php");
